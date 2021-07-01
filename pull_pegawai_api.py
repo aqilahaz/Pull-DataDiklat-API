@@ -13,8 +13,8 @@ import time
 from itertools import chain
 import datetime
 
-user = 'getdatasik'
-password = '123456'
+user = ''
+password = ''
 
 session = Session()
 session.auth = HTTPBasicAuth(user, password)
