@@ -56,7 +56,7 @@ def request_data_kantor(kd):
 def request_data_pegawai(d1):
     DatPegawai=[]
     for key in d1:
-        link = 'http://192.168.72.83:7800/api/soa-sik/getListPegawaiByKantor/'+key
+        link = '#rest api'+key
         auth = HTTPBasicAuth('getdatasik', '123456')
         getListPegawai = requests.get(url=link, auth=auth, timeout=120)
         print("Status Request Data Pegawai:", getListPegawai.status_code)
